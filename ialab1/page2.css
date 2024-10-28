@@ -1,0 +1,140 @@
+/* Reset stylów domyślnych */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tło strony */
+body {
+    background-image: url('basketcartoon.jpg'); /* Set a different image path */
+    background-size: cover; /* Make the image cover the entire background */
+    color: #f0f0f0; /* Text color for better visibility */
+    font-family: 'Verdana', sans-serif; /* Different font family */
+}
+
+/* Styl dla nagłówka i sekcji */
+header, section {
+    padding: 30px; /* Increased padding */
+    margin: 15px; /* Margin between sections */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+header {
+    background-color: rgba(10, 10, 10, 0.8); /* Darker background for the header */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+section {
+    background-color: rgba(20, 20, 20, 0.7); /* Darker background for sections */
+    border: 1px solid #ffa500; /* Highlighted border */
+}
+
+/* Ustawienia dla wyrównania tekstu */
+.left {
+    text-align: left; /* Aligns text to the left */
+}
+
+.right {
+    text-align: right; /* Aligns text to the right */
+}
+
+/* Styl dla obrazków w sekcjach */
+.section-image {
+    max-width: 180px; /* Slightly larger maximum width for images */
+    margin: 15px; /* Margin around images */
+}
+
+.left-image {
+    float: left; /* Float the image to the left */
+    margin-right: 15px; /* Space between the image and text */
+}
+
+.right-image {
+    float: right; /* Float the image to the right */
+    margin-left: 15px; /* Space between the image and text */
+}
+
+/* Styl dla nagłówków */
+h1 {
+    font-size: 3rem; /* Increased size for the main heading */
+    color: #ffa500; /* Bright orange for visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+h2 {
+    font-size: 2rem; /* Increased size for secondary headings */
+    color: #00bfff; /* Bright blue for contrast */
+    margin: 15px 0; /* Spacing around */
+    border-bottom: 2px dashed #ffa500; /* Dashed underline for visual interest */
+    padding-bottom: 5px; /* Space between text and underline */
+}
+
+h3 {
+    font-size: 1.5rem; /* Font size for third-level headings */
+    color: #df951c; /* White for clarity */
+    margin: 10px 0; /* Spacing around */
+}
+
+/* Styl dla paragrafów */
+p {
+    font-size: 1.1rem; /* Slightly larger text for paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #dddddd; /* Light gray for contrast */
+    margin: 10px 0; /* Spacing around paragraphs */
+}
+
+/* Styl dla elementów listy */
+li {
+    font-size: 1rem;
+    line-height: 1.5; /* Increased line height for list items */
+    color: #eeeeee; /* Light color for list items */
+    padding-left: 20px; /* Indentation for list items */
+    position: relative; /* For pseudo-elements */
+}
+
+/* Custom bullet points */
+li:before {
+    content: "✔️"; /* Custom bullet */
+    position: absolute; /* Positioning */
+    left: 0; /* Align to the left */
+    color: #ffa500; /* Bullet color */
+}
+
+/* Styl dla stopki */
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9); /* Darker footer */
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Styl linku */
+a {
+    color: #ffa500; /* Bright orange for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ffdd00; /* Change color on hover */
+}
+
+/* Styl responsywny */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Adjusted size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Adjusted size for smaller screens */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjusted size for smaller screens */
+    }
+}

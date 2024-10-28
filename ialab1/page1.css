@@ -1,0 +1,95 @@
+/* Reset stylów domyślnych */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('stars.jpg'); /* Set the image path */
+    background-size: cover; /* Make the image cover the entire background */
+}
+
+/* Styl dla nagłówka i sekcji */
+header, section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+section {
+    padding: 20px;
+    margin: 10px; /* Margin between sections */
+    overflow: auto;
+}
+
+.left {
+    text-align: left; /* Aligns text to the left */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: light background for visibility */
+}
+
+.right {
+    text-align: right; /* Aligns text to the right */
+    background-color: rgba(230, 230, 230, 0.8); /* Optional: different background color */
+}
+
+.section-image {
+    max-width: 150px; /* Set a maximum width for images */
+    margin: 10px; /* Margin around images */
+}
+
+.left-image {
+    float: left; /* Float the image to the left */
+}
+
+.right-image {
+    float: right; /* Float the image to the right */
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Styl dla paragrafów */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Styl dla stopki */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+}
+
+/* Styl responsywny */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+}
